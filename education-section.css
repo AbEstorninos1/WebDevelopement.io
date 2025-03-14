@@ -1,0 +1,65 @@
+.education-section {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(to bottom, rgba(175, 191, 241, 0.966)15%, aliceblue 40%);
+  gap: 100px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.education-section h1{
+  display: flex;
+  position: absolute;
+  justify-content:center;
+  font-family: monospace;
+  font-size: 4rem;
+  padding: 0;
+  opacity: 0;
+  top: 0;
+}
+
+.technical-header{
+  margin-left: 50px;
+}
+
+.education-list ,.technical-list{
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 40px rgb(163, 169, 175);
+}
+.education-section h1.active{
+  animation: slide-top ease-in 0.5s 20ms forwards;
+}
+
+.education-body ,.technical-body{
+  opacity: 0;
+  margin-bottom: 7rem;
+  font-size: 2rem;
+  flex-direction: column;
+  top: 20px;
+}
+
+.technical-body{
+  right: 80%;
+}
+.technical-body.active{
+  animation: slide-bottom ease-in 0.5s 20ms forwards;
+}
+.education-body.active{
+  animation: slide-bottom ease-in 0.5s 20ms forwards;
+}
+
+.education-list ,.technical-list{
+  font-size :1.5rem;
+  top :50px;
+  
+  
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+

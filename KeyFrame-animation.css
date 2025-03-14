@@ -1,0 +1,112 @@
+
+@keyframes slide-left-blur {
+  0% {
+    margin-left: 12px;
+    opacity: 0.2;
+  }
+  50% {
+    margin-left: 75px;
+    opacity: 0.6;
+  }
+  100% {
+    margin-left: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-top {
+  from{
+    opacity: 0.10;
+    transform: translatey(0);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes slide-top-hobbies {
+  from{
+    opacity: 0.10;
+    transform: translatey(0);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(80px);
+  }
+}
+
+@keyframes slide-bottom {
+  from{
+    
+    transform: translateY(80px);
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideRight {
+  from{
+    transform: translateX(40px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+      top: 100%;
+  }
+
+  100% {
+      top: 0;
+  }
+}
+
+@keyframes slide-top-music {
+  from {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(40px);
+  }
+}
+
+@keyframes slide-left {
+  from {
+      opacity: 0.8;
+      transform: translateX(-200px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+      opacity: 0;
+      transform: translateX(200px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+@keyframes slide-Top {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(-40px);
+  }
+  
+}

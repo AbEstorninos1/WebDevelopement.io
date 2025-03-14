@@ -1,0 +1,132 @@
+:root {
+  --primary-color: rgb(20,20,20);
+  --background-color: aliceblue
+}
+.hsi {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .home-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,rgb(17, 17, 17) 20%,rgba(23, 25, 31, 0.966) 80%); 
+}
+.basic-info {
+  margin-top:120px;
+}
+.basic-info.active{
+  animation: slide-right ease-in-out 0.8s forwards;
+}
+
+.home-section-body {
+  cursor: default;
+  transform: translateX(30px);
+}
+.Introduction{
+  position: absolute;
+  margin-bottom: 700px;
+  color:rgb(202, 200, 200);
+  font-size:2rem;
+}
+.Introduction.active{
+  animation:slide-Top ease-in-out 1s forwards;
+}
+
+.home-section h2 {
+  font-size: 3rem; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+.home-section p {
+  color: rgb(202, 202, 202);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+.home-section img {
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0;
+}
+.home-section img.active{
+  animation: slide-left ease-in-out 0.60s forwards;
+}
+
+.home-section-name {
+  color: white;
+  opacity: 0.7;
+  position:absolute;
+  margin-bottom: 50px;
+}
+
+
+.home-section-name.active {
+  animation: slide-right ease-in-out 0.8s forwards;
+}
+
+.home-section img:hover {
+  transition: filter 0.3s ease-in;
+  
+}
+
+.home-section button {
+  position: relative;
+  transform: translateY(40px);
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  gap: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn-contact.active{
+  animation: slide-bottom ease-in 0.8s forwards;
+}
+
+.btn-contact:hover {
+  color: var(--background-color);
+  box-shadow: 0 0 20px white;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 200ms ease-in;
+}
+
+.btn-contact::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  transition: transform 400ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 0;
+}
+
+.btn-contact:hover::before,
+.btn-contact:focus::before {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  content: "Contact me";
+  color: var(--primary-color);
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: content 10ms forward;
+}

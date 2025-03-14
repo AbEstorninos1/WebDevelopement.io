@@ -1,0 +1,88 @@
+.hobbies-section {  
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    cursor: default;
+    background: linear-gradient(to bottom, rgba(175, 191, 241, 0.966)5%, aliceblue 40%);
+}
+
+.hobbies-body { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    top: 15vh;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0;
+}
+
+.hobbies-body.active {
+    animation: slide-top 0.4s 10ms ease-in-out forwards;
+}
+
+.hobbies-letter {
+    position: absolute;
+    font-size: 400px;
+    z-index: 10;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0.8;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1.hobbies-letter {
+    text-align: center;
+    margin: 0; 
+}
+
+.hobbies-item {
+    width: 300px;
+    height: 27rem;
+    gap: 90px;
+    background: linear-gradient(to top, #ffffff 20%, #f0f0f0 100%);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 40px rgba(175, 191, 241, 0.966);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.hobbies-item:nth-child(even){
+    transform: translateY(20px);
+}
+
+.hobbies-item:nth-child(odd){
+    transform: translateY(-20px);
+}
+
+.hobbies-item p {
+    position: absolute;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    bottom: 10px;
+    left: 4rem;
+    z-index: 10;
+    font-size: 2.1rem;
+}
+
+.hobbies-item img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hobbies-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out forwards;
+    z-index: 40;
+}
